@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex,nofollow" />
+    <title>PICTILE</title>
+    <link rel="stylesheet" type="text/css" href="pictile.css">
+    <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+    <script src="pictile.js" charset="utf-8"></script>
+</head>
+<body>
+	<div id="main">
+        <div id="content_header">
+            <h1>PICTILE【ライト版】</h1>
+        </div>
+        <div id="content_btn" class="content-body">
+            <input type="button" name="makeBtn" id="makeBtn" value="つくる" onClick="mkBoard()"> 
+            <input type="button" name="saveBtn" id="saveBtn" value="記念に残す" onClick="svBoard()"> 
+            <input type="button" name="resetBtn" id="resetBtn" value="やり直す" onClick="resetBoard()"> 
+            <a id="download" href="" download="image.png"></a>            
+        </div><!-- content_body1 -->
+        <div id="content_canvas" class="content-body">
+            <table id="pic_table"></table>
+            <img src="" id="download_img" />
+        </div><!-- content_body2 -->
+    </div><!-- #main -->
+</body>
+</html>
